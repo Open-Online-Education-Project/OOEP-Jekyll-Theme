@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ site.title }}</title>
+		<link rel="stylesheet" href="/assets/css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			{% include header.html %}
+			<section>
+				{{ content }}
+			</section>
+			{% include footer.html %}
+		</div>
+	</body>
+</html>
