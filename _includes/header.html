@@ -1,15 +1,14 @@
-<div class="header">
-	<img src="/assets/img/header_logo.png"><span>OOEP</span>
-</div>
 {% assign sorted_pages = site.pages | sort:"nav_order" %}
-<nav>
-	{% for p in sorted_pages %}
-		{% if p.nav_title %}
-			{% if page.nav_title and page.nav_title == p.nav_title %}
-				<span>{{ p.nav_title }}</span>
-			{% else %}
-				<a href="{{ p.url }}">{{ p.nav_title }}</a>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
+<nav class="horizontal">
+                <img src="/assets/img/logo@3x.png">
+                <div class="links">
+			{% for p in sorted_pages %}
+				{% if p.nav_title %}
+					{% if page.nav_title and page.nav_title == p.nav_title %}
+						<a href="{{ p.url }}" style="font-weight: normal">{{ p.nav_title }}</a>
+					{% else %}
+						<a href="{{ p.url }}">{{ p.nav_title }}</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
 </nav>
