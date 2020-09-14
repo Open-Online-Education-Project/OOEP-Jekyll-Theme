@@ -165,7 +165,14 @@ nav img {
 	margin-right: 3.5%;
 }
 
+.desktopbr:before {
+	content: "<br>";
+}
+
 @media (max-width: 768px) {
+	.desktopbr:before {
+		content: " ";	
+	}
 	.links {
 		text-align: center;
 	}
