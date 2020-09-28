@@ -47,6 +47,7 @@ nav {
 .group>* {
 	flex-grow: 1;
 	flex-basis: 0;
+	-webkit-flex: 1 0 0;
 	flex: 1 0 0;
 }
 
@@ -142,12 +143,14 @@ nav img {
 	width: 8%;
 	vertical-align: middle;
 	flex-grow: 0;
+	-webkit-flex: 0 1 auto;
 	flex: 0 1 auto;
 }
 
 .links {
 	flex-grow: 1;
 	text-align: right;
+	-webkit-flex: 1 1 auto;
 	flex: 1 1 auto;
 }
 
@@ -204,10 +207,12 @@ nav img {
 
 .principleheader {
 	flex-grow: 0;
+	-webkit-flex: 0 1 auto;
 	flex: 0 1 auto;
 }
 
 .desired .principle {
 	flex-grow: 0;
+	-webkit-flex: 0 1 auto;
 	flex: 0 1 auto;
 }
