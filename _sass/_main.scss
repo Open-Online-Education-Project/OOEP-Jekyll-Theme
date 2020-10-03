@@ -47,9 +47,8 @@ nav {
 .group>* {
 	flex-grow: 1;
 	flex-basis: 0;
-	-webkit-flex: 1 0 0;
-	flex: 1 0 0;
-	flex-shrink: 0;
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 .vertical {
