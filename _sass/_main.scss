@@ -179,6 +179,11 @@ nav img {
 	margin-right: 3.5%;
 }
 
+.project {
+	padding-right: 1.75%;
+	max-width: 50%;
+}
+
 @media (max-width: 768px) {
 	.links {
 		text-align: center;
@@ -194,10 +199,9 @@ nav img {
 	.header .header-right {
 		width: 100%;
 	}
-}
-
-.project {
-	padding-right: 1.75%;
+	.project {
+		max-width: 100%;
+	}
 }
 
 .desired {
